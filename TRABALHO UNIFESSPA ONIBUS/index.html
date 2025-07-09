@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso Aluno - UNIFESSPA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="imagens/Marca-Vertical-Smbolo-Tipografia-preta01.png" alt="Logo da UNIFESSPA" class="logo">
+            <h1>Portal do Aluno</h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="login-section" class="container">
+            <h2>Acesso Restrito</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">E-mail Institucional:</label>
+                    <input type="email" id="email" placeholder="seu.email@unifesspa.edu.br" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit">Entrar</button>
+                <p id="login-message" class="message"></p>
+            </form>
+        </section>
+
+        <section id="dashboard-section" class="container hidden">
+            <h2>Bem-vindo(a), <span id="student-email-display"></span>!</h2>
+
+            <div class="dashboard-grid">
+                <div class="card">
+                    <h3>Horários de Ônibus</h3>
+                    <img src="imagens/onibus(sem marca).png" alt="Ônibus" class="card-image">
+                    <div id="bus-schedule">
+                        <p>Carregando horários...</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Meus Agendamentos de Ônibus</h3>
+                    <img src="imagens/agenda.png" alt="Agenda" class="card-image">
+                    <div id="my-bus-bookings">
+                        <p>Nenhum agendamento ainda.</p>
+                        <ul>
+                            </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Feedback e Sugestões</h3>
+                    <img src="imagens/feedback.png" alt="Feedback" class="card-image">
+                    <form id="feedback-form">
+                        <div class="form-group">
+                            <label for="feedback-type">Tipo de Feedback:</label>
+                            <select id="feedback-type">
+                                <option value="onibus">Ônibus</option>
+                                <option value="estrutura">Estrutura</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="feedback-message">Sua Mensagem:</label>
+                            <textarea id="feedback-message" rows="5" placeholder="Digite seu feedback aqui..." required></textarea>
+                        </div>
+                        <button type="submit">Enviar Feedback</button>
+                        <p id="feedback-message-display" class="message"></p>
+                    </form>
+                </div>
+            </div>
+            <button id="logout-button">Sair</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 UNIFESSPA. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

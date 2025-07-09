@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "email": "aluno1@unifesspa.edu.br",
+      "password": "senha123",
+      "bookings": []
+    },
+    {
+      "email": "aluno2@unifesspa.edu.br",
+      "password": "outrasenha",
+      "bookings": []
+    }
+  ],
+  "busSchedule": [
+    {
+      "id": "bus001",
+      "route": "Campus Central - Terminal Rodoviário",
+      "times": ["07:00", "08:15", "12:00", "13:30", "18:00", "19:30"],
+      "days": ["Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira"]
+    },
+    {
+      "id": "bus002",
+      "route": "Campus Agrárias - Bairro Universitário",
+      "times": ["07:30", "09:00", "12:30", "14:00", "18:30"],
+      "days": ["Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira"]
+    },
+    {
+      "id": "bus003",
+      "route": "Rota do Fim de Semana (todos os campi)",
+      "times": ["09:00", "11:00", "15:00", "17:00"],
+      "days": ["Sábado", "Domingo"]
+    }
+  ],
+  "feedbacks": []
+}
